@@ -1,0 +1,1 @@
+Sitemap: https://jpbiomed.github.io/blogai/sitemap.xml

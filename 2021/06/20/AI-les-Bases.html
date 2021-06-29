@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Apprendre avec Fast AI | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Apprendre avec Fast AI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://jpbiomed.github.io/blogai/2021/06/20/AI-les-Bases.html" />
+<meta property="og:url" content="https://jpbiomed.github.io/blogai/2021/06/20/AI-les-Bases.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-20T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://jpbiomed.github.io/blogai/2021/06/20/AI-les-Bases.html","@type":"BlogPosting","headline":"Apprendre avec Fast AI","dateModified":"2021-06-20T00:00:00-05:00","datePublished":"2021-06-20T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jpbiomed.github.io/blogai/2021/06/20/AI-les-Bases.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blogai/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jpbiomed.github.io/blogai/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/blogai/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blogai/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blogai/about/">About Me</a><a class="page-link" href="/blogai/search/">Search</a><a class="page-link" href="/blogai/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Apprendre avec Fast AI</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-20T00:00:00-05:00" itemprop="datePublished">
+        Jun 20, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/JPBiomed/blogai/tree/master/_notebooks/2021-06-20-AI-les-Bases.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blogai/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/JPBiomed/blogai/master?filepath=_notebooks%2F2021-06-20-AI-les-Bases.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blogai/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/JPBiomed/blogai/blob/master/_notebooks/2021-06-20-AI-les-Bases.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blogai/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-06-20-AI-les-Bases.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Les-bases">Les bases<a class="anchor-link" href="#Les-bases"> </a></h2><h3 id="Le-probl&#232;me-:-apprendre-&#224;-un-ordinateur">Le probl&#232;me : apprendre &#224; un ordinateur<a class="anchor-link" href="#Le-probl&#232;me-:-apprendre-&#224;-un-ordinateur"> </a></h3><p>Le deeplearning permet qu'un ordinateur apprenne tout seul à analyser des données. Cela peut donc permettre d'apprendre à un ordinateur de reconnaître un chat alors que un humain aurait énormément de difficultés à lui expliquer comment le reconnaître.</p>
+<p>Par exemple, si je vous demande de décrire un chat comme celui-ci, que diriez-vous ?
+<figure>
+  
+    <img class="docimage" src="/blogai/images/copied_from_nb/../images/notebooks/2021-06-20-chat.jpg" alt="Chat" style="max-width: 200px" />
+    
+    
+      <figcaption>Image d'un chat</figcaption>
+    
+</figure>
+</p>
+<p>On pourrait dire que :</p>
+<ul>
+<li>il a des pattes</li>
+<li>il a des poils</li>
+<li>il a des oreilles qui dépassent de sa tête</li>
+<li>il a une queue</li>
+<li>...</li>
+</ul>
+<p>Cette définition fait déjà appel à d'autres concepts (pattes, poils, oreilles, tête, queue, ...) qu'ils faudraient également expliquer à l'ordinateur mais en plus de cela, cette définition pourrait très bien s'appliquer à cette image-ci :
+<figure>
+  
+    <img class="docimage" src="/blogai/images/copied_from_nb/../images/notebooks/2021-06-20-chien.jpg" alt="Chien" style="max-width: 200px" />
+    
+    
+      <figcaption>Image d'un chien</figcaption>
+    
+</figure>
+</p>
+<p>Au final, il se trouve que tout expliquer à un ordinateur est impossible et que donc il est plus pratique qu'il apprenne tout seul.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Le-deeplearning-:-de-la-m&#233;moire-et-une-m&#233;thode">Le deeplearning : de la m&#233;moire et une m&#233;thode<a class="anchor-link" href="#Le-deeplearning-:-de-la-m&#233;moire-et-une-m&#233;thode"> </a></h3><p>Faire quelque chose, on l'appelera une capacité. Une capacité sera donc par exemple de reconnaître un chat.</p>
+<p>Pour apprendre, un ordinateur a besoin d'une méthode d'apprentissage qu'on verra au fur et à mesure. C'est l'architecture du réseau de neurones et la méthode de modification des paramètres, ensemble c'est un modèle.
+Chez nous les humains, on l'appelle le cerveau. L'architecture c'est notre anatomie et les connexions entre nos neurones. Chacun en a un différent et c'est pour ça que certains apprennent plus vite que d'autres, retiennent plus longtemps. Mais chacun a des compétences différentes, certains seront fort en maths, d'autres en sports, en musique ou comprendront mieux les émotions des autres.</p>
+<p>De la même manière, certaines architectures sont plus appropriées pour certaines tâches que pour d'autres.</p>
+<p>Pour retenir ce qu'il apprend, il utilisera des milliers ou millions de paramètres, qui lui permettront d'analyser ce qu'il voit à chaque étape. L'ordinateur modifie les paramètres pour se rapprocher de la bonne réponse.</p>
+<p>Chaque paramètre est un élément du modèle et trouve sa place dans l'architecture utilisée. Un ensemble de paramètres pourra être optimal pour une application spécifique (ex: différencier les chats et les chiens, détecter la présence ou l'absence de caries sur un radio dentaire, ...) mais ne fonctionnera pas comme cela pour une autre application. Par contre, une architecture peut être utilisée pour plusieurs applications différentes mais devra être adaptées</p>
+<p>Et pour finir, il faut du matériel à étudier : les données.</p>
+<p>Les données, c'est un peu le livre d'étude de l'ordinateur, c'est là cela sa source d'informations alors évidemment plus il en a plus il a de grandes capacités</p>
+<p>Mais l'important c'est que ces données soient annotées, en effet, l'ordinateur doit savoir ce qu'il cherche</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gv</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&quot;Architecture et Methode d&#39;Apprentissage&quot;[shape=box3d width=1 height=0.7]</span>
+<span class="s1">Données-&gt;&quot;Architecture et Methode d&#39;Apprentissage&quot;-&gt; Capacité&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-8-92956a06600f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> gv(&#39;&#39;&#39;&#34;Architecture et Methode d&#39;Apprentissage&#34;[shape=box3d width=1 height=0.7]
+</span><span class="ansi-green-intense-fg ansi-bold">      2</span> Données-&gt;&#34;Architecture et Methode d&#39;Apprentissage&#34;-&gt; Capacité&#39;&#39;&#39;)
+
+<span class="ansi-green-fg">~/anaconda3/lib/python3.8/site-packages/fastbook/__init__.py</span> in <span class="ansi-cyan-fg">gv</span><span class="ansi-blue-fg">(s)</span>
+<span class="ansi-green-intense-fg ansi-bold">     39</span>     <span class="ansi-green-fg">if</span> IN_COLAB<span class="ansi-blue-fg">:</span> <span class="ansi-green-fg">return</span> setup_colab<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     40</span> 
+<span class="ansi-green-fg">---&gt; 41</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">def</span> gv<span class="ansi-blue-fg">(</span>s<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span> <span class="ansi-green-fg">return</span> graphviz<span class="ansi-blue-fg">.</span>Source<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;digraph G{ rankdir=&#34;LR&#34;&#39;</span> <span class="ansi-blue-fg">+</span> s <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">&#39;; }&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     42</span> 
+<span class="ansi-green-intense-fg ansi-bold">     43</span> <span class="ansi-green-fg">def</span> get_image_files_sorted<span class="ansi-blue-fg">(</span>path<span class="ansi-blue-fg">,</span> recurse<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">,</span> folders<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;graphviz&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gv</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&quot;Cerveau humain&quot;[shape=box3d width=1 height=0.7]</span>
+<span class="s1">&quot;Livre de référence&quot;-&gt;&quot;Cerveau humain&quot;-&gt;Capacité&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;
+<!-- Generated by graphviz version 2.42.3 (20191010.1750)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="512pt" height="58pt" viewBox="0.00 0.00 511.67 58.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 54)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-54 507.67,-54 507.67,4 -4,4" />
+<!-- Cerveau humain -->
+<g id="node1" class="node">
+<title>Cerveau humain</title>
+<polygon fill="none" stroke="black" points="363.68,-50 233.68,-50 229.68,-46 229.68,0 359.68,0 363.68,-4 363.68,-50" />
+<polyline fill="none" stroke="black" points="359.68,-46 229.68,-46 " />
+<polyline fill="none" stroke="black" points="359.68,-46 359.68,0 " />
+<polyline fill="none" stroke="black" points="359.68,-46 363.68,-50 " />
+<text text-anchor="middle" x="296.68" y="-21.3" font-family="Times,serif" font-size="14.00">Cerveau humain</text>
+</g>
+<!-- Capacité -->
+<g id="node3" class="node">
+<title>Capacité</title>
+<ellipse fill="none" stroke="black" cx="451.68" cy="-25" rx="51.99" ry="18" />
+<text text-anchor="middle" x="451.68" y="-21.3" font-family="Times,serif" font-size="14.00">Capacité</text>
+</g>
+<!-- Cerveau humain&#45;&gt;Capacité -->
+<g id="edge2" class="edge">
+<title>Cerveau humain&#45;&gt;Capacité</title>
+<path fill="none" stroke="black" d="M363.9,-25C372.4,-25 381.07,-25 389.48,-25" />
+<polygon fill="black" stroke="black" points="389.58,-28.5 399.58,-25 389.58,-21.5 389.58,-28.5" />
+</g>
+<!-- Livre de référence -->
+<g id="node2" class="node">
+<title>Livre de référence</title>
+<ellipse fill="none" stroke="black" cx="96.84" cy="-25" rx="96.68" ry="18" />
+<text text-anchor="middle" x="96.84" y="-21.3" font-family="Times,serif" font-size="14.00">Livre de référence</text>
+</g>
+<!-- Livre de référence&#45;&gt;Cerveau humain -->
+<g id="edge1" class="edge">
+<title>Livre de référence&#45;&gt;Cerveau humain</title>
+<path fill="none" stroke="black" d="M193.86,-25C202.47,-25 211.11,-25 219.52,-25" />
+<polygon fill="black" stroke="black" points="219.64,-28.5 229.64,-25 219.64,-21.5 219.64,-28.5" />
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gv</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&quot;Cerveau humain&quot;[shape=box3d width=1 height=0.7]</span>
+<span class="s1">&quot;Livre de référence&quot;-&gt;&quot;Cerveau humain&quot;-&gt;Capacité&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Comment-&#231;a-marche-?">Comment &#231;a marche ?<a class="anchor-link" href="#Comment-&#231;a-marche-?"> </a></h3><p>Je vais résumer les choses. Si vous voulez comprendre dans le détail, je vous recommande d'aller suivre le cours directement (<a href="https://course.fast.ai">https://course.fast.ai</a>).</p>
+<p>En gros, le deep learning se base sur le fait qu'avec beaucoup de petits éléments très simples mais avec beaucoup d'interconnexion, il y a moyen de tout apprendre.</p>
+<p>On appelle ces éléments des neurones. Il sont tous simples parce que pour la plupart, il font une somme pondérée de tous les neurones auxquels ils sont connectés.</p>
+<p>Une somme pondérée c'est par exemple, un ticket de caisse au supermarché, on additione le nombre d'articles multipliés par le prix de chaque article.</p>
+<p>Ensuite, si on modifie ces paramètres, on pourra apprendre ce que l'on veut.</p>
+<p>Pour augmenter le niveau d'abstraction, c'est-à-dire permettre à l'ordinateur d'apprendre des choses de plus en plus complexes, on augmentera le nombre de niveau.</p>
+<p>Un réseau de neurones de convolution peut être vu comme ceci.
+<figure>
+  
+    <img class="docimage" src="/blogai/images/copied_from_nb/../images/notebooks/2021-06-20-CNN.jpeg" alt="CNN" style="max-width: 800px" />
+    
+    
+      <figcaption>Convolutionnal Neural Network</figcaption>
+    
+</figure>
+</p>
+<p>À chaque niveau, on détecte des caractéristiques plus complexes:</p>
+<ol>
+<li>Aux premiers niveaux, elles sont très simples, lignes obliques à gauche, couleur unie, ligne horizontale, ...</li>
+<li>Aux niveaux intermédiaires, on voit apparaitre des combinaisons des premières caractéristiques: cercles, ...</li>
+<li>Aux derniers niveaux, on différencie des éléments très complexes : voitures, motos, vélo, visage, ...
+En fait, ces derniers niveaux sont également une combinaison des niveaux précédents. Un visage c'est un cercle avec des cercles pour les yeux, des lignes pour le nez, ...
+<figure>
+  
+    <img class="docimage" src="/blogai/images/copied_from_nb/../images/notebooks/2021-06-20-CNNFeatures.jpeg" alt="CNN" style="max-width: 600px" />
+    
+    
+      <figcaption>Interprétation des caractéristiques détectées par niveau</figcaption>
+    
+</figure>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="En-analysant-des-images,-on-peut-tout-faire">En analysant des images, on peut tout faire<a class="anchor-link" href="#En-analysant-des-images,-on-peut-tout-faire"> </a></h3><p>Ce qui est marrant, c'est que plein de gens ont réussi à exploiter des modèles d'analyses d'images pour détecter des virus informatiques ou bien analyser des sons ou autres. Et même mieux, ils ont obtenu des meilleurs résultats.</p>
+<p>Si ca vous intéresse, aller regarder le cours de Jérémy Howard !
+<a href="https://www.youtube.com/watch?v=BvHmRx14HQ8&amp;t=1706s">https://www.youtube.com/watch?v=BvHmRx14HQ8&amp;t=1706s</a></p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/blogai/2021/06/20/AI-les-Bases.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blogai/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blogai/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blogai/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/blogai/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/blogai/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

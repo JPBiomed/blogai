@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Apprendre avec Fast AI | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Apprendre avec Fast AI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://jpbiomed.github.io/blogai/2021/06/24/FastAi.html" />
+<meta property="og:url" content="https://jpbiomed.github.io/blogai/2021/06/24/FastAi.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-24T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://jpbiomed.github.io/blogai/2021/06/24/FastAi.html","@type":"BlogPosting","headline":"Apprendre avec Fast AI","dateModified":"2021-06-24T00:00:00-05:00","datePublished":"2021-06-24T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jpbiomed.github.io/blogai/2021/06/24/FastAi.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blogai/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jpbiomed.github.io/blogai/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/blogai/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blogai/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blogai/about/">About Me</a><a class="page-link" href="/blogai/search/">Search</a><a class="page-link" href="/blogai/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Apprendre avec Fast AI</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-24T00:00:00-05:00" itemprop="datePublished">
+        Jun 24, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/JPBiomed/blogai/tree/master/_notebooks/2021-06-24-FastAi.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blogai/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/JPBiomed/blogai/master?filepath=_notebooks%2F2021-06-24-FastAi.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blogai/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/JPBiomed/blogai/blob/master/_notebooks/2021-06-24-FastAi.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blogai/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-06-24-FastAi.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Cr&#233;er-son-premier-mod&#232;le">Cr&#233;er son premier mod&#232;le<a class="anchor-link" href="#Cr&#233;er-son-premier-mod&#232;le"> </a></h2><p>Commençons par choisir un sujet pour mon premier projet.</p>
+<p>Voilà mes idées:</p>
+<ul>
+<li>Classification de pelouse arrosée ou sèche</li>
+<li>Créateur de mail pour prendre des nouvelles d'amis</li>
+<li>Classification d'images de malaria infectées ou non infectées</li>
+</ul>
+<p>Avant de lancer mon premier modèle, il faut que j'ai des données.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Obtenir-des-donn&#233;es">Obtenir des donn&#233;es<a class="anchor-link" href="#Obtenir-des-donn&#233;es"> </a></h3><p>On peut trouver des banques de données en ligne.</p>
+<p>Voilà les sources de données auxquelles j'ai pensé:</p>
+<ul>
+<li>Pelouse : Je vais obtenir les images sur base de l'API de Bing Image (c'est pareil que Google Image)</li>
+<li>Mail : Mes derniers messages à des amis et en écrire une dizaine en plus</li>
+<li>Malaria : J'ai trouvé des datasets sur Kaggle, une plate-forme de compétition de Data Science, allez voir c'est super intéressant !</li>
+</ul>
+<p>Pour ce premier projet, je commence par les pelouses !</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;AZURE_SEARCH_KEY&#39;</span><span class="p">,</span> <span class="s1">&#39;XXX&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">search_images_bing</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s1">&#39;dry lawns&#39;</span><span class="p">)</span>
+<span class="n">ims</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">attrgot</span><span class="p">(</span><span class="s1">&#39;content_url&#39;</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">ims</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ErrorResponseException</span>                    Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-3-cddb73f3292e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>results <span class="ansi-blue-fg">=</span> search_images_bing<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;grizzly bear&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> ims <span class="ansi-blue-fg">=</span> results<span class="ansi-blue-fg">.</span>attrgot<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;content_url&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> len<span class="ansi-blue-fg">(</span>ims<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/fastai/lib/python3.8/site-packages/fastbook/__init__.py</span> in <span class="ansi-cyan-fg">search_images_bing</span><span class="ansi-blue-fg">(key, term, min_sz)</span>
+<span class="ansi-green-intense-fg ansi-bold">     50</span> <span class="ansi-green-fg">def</span> search_images_bing<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> term<span class="ansi-blue-fg">,</span> min_sz<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">128</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     51</span>     client <span class="ansi-blue-fg">=</span> api<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;https://api.cognitive.microsoft.com&#39;</span><span class="ansi-blue-fg">,</span> auth<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 52</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> L<span class="ansi-blue-fg">(</span>client<span class="ansi-blue-fg">.</span>images<span class="ansi-blue-fg">.</span>search<span class="ansi-blue-fg">(</span>query<span class="ansi-blue-fg">=</span>term<span class="ansi-blue-fg">,</span> count<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">150</span><span class="ansi-blue-fg">,</span> min_height<span class="ansi-blue-fg">=</span>min_sz<span class="ansi-blue-fg">,</span> min_width<span class="ansi-blue-fg">=</span>min_sz<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>value<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     53</span> 
+<span class="ansi-green-intense-fg ansi-bold">     54</span> <span class="ansi-green-fg">def</span> plot_function<span class="ansi-blue-fg">(</span>f<span class="ansi-blue-fg">,</span> tx<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> ty<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> title<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> min<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span> max<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span> figsize<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/opt/conda/envs/fastai/lib/python3.8/site-packages/azure/cognitiveservices/search/imagesearch/operations/_images_operations.py</span> in <span class="ansi-cyan-fg">search</span><span class="ansi-blue-fg">(self, query, accept_language, user_agent, client_id, client_ip, location, aspect, color, country_code, count, freshness, height, id, image_content, image_type, license, market, max_file_size, max_height, max_width, min_file_size, min_height, min_width, offset, safe_search, size, set_lang, width, custom_headers, raw, **operation_config)</span>
+<span class="ansi-green-intense-fg ansi-bold">    489</span> 
+<span class="ansi-green-intense-fg ansi-bold">    490</span>         <span class="ansi-green-fg">if</span> response<span class="ansi-blue-fg">.</span>status_code <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">in</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">200</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 491</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> models<span class="ansi-blue-fg">.</span>ErrorResponseException<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_deserialize<span class="ansi-blue-fg">,</span> response<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    492</span> 
+<span class="ansi-green-intense-fg ansi-bold">    493</span>         deserialized <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">None</span>
+
+<span class="ansi-red-fg">ErrorResponseException</span>: Operation returned an invalid status code &#39;PermissionDenied&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dest</span> <span class="o">=</span> <span class="s1">&#39;images/dry_lawn.jpg&#39;</span>
+<span class="n">download_url</span><span class="p">(</span><span class="n">ims</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dest</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bear_types</span> <span class="o">=</span> <span class="s1">&#39;dry&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;lawns&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+    <span class="n">path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">bear_types</span><span class="p">:</span>
+        <span class="n">dest</span> <span class="o">=</span> <span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="n">o</span><span class="p">)</span>
+        <span class="n">dest</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="n">search_images_bing</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">o</span><span class="si">}</span><span class="s1"> lawns&#39;</span><span class="p">)</span>
+        <span class="n">download_images</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="n">urls</span><span class="o">=</span><span class="n">results</span><span class="o">.</span><span class="n">attrgot</span><span class="p">(</span><span class="s1">&#39;content_url&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fns</span> <span class="o">=</span> <span class="n">get_image_files</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="n">fns</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">failed</span> <span class="o">=</span> <span class="n">verify_images</span><span class="p">(</span><span class="n">fns</span><span class="p">)</span>
+<span class="n">failed</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">failed</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">Path</span><span class="o">.</span><span class="n">unlink</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Charger-les-images-pour-le-mod&#232;le">Charger les images pour le mod&#232;le<a class="anchor-link" href="#Charger-les-images-pour-le-mod&#232;le"> </a></h3><p>Un modèle de deep learning a des millions de paramètres comme nous l'avons dit. Donc pour les ajuster tous, cela prend beaucoup de temps. Pour faire cela plus rapidement, on fait l'optimisation en parallèle. Pour ce faire, on utilise un GPU (Graphical Processing Unit) qui est spécialisé dans les calculs en parallèle et on envoie les données par "batch" ou par lot en francais.</p>
+<p>Par défaut, les lots de fast.ai sont de 64 images.</p>
+<p>Avant d'envoyer ces données, il est nécessaire de les préparer et puis de les rassembler en lot qu'on enverra au GPU.</p>
+<p>Pour les préparer, fast.ai fournit les <code>DataBlock</code> et demandent quelques informations concernant le modèle:</p>
+<ul>
+<li><code>blocks</code> : le type de données : dans notre cas, c'est des images d'une part et des catégories d'autre part, (pelouses sèches vs pelouses humides)</li>
+<li><code>get_items</code>: le chemin d'accès des images : ici c'est grâce à la fonction <code>get_image_files</code></li>
+<li><code>splitter</code> : la division entre ensemble d'entraînement et de validation</li>
+<li><code>get_y</code> : la définition des catégories ou de l'ensemble «cible», typiquement appelé y. Ici c'est le type de pelouse. Ici <code>parent_label</code> reprendra directement le nom du dossier parent.</li>
+<li><code>item_tfms</code> : la méthode de transformation des images : En effet, pour que l'algorithme puisse travailler, il est nécessaire que toutes les images aient la même taille. Classiquement, on choisit de prendre une image carrée. On l'obtenir, on a plusieurs options, qu'on définira avec l'attribut <code>item_tfms</code> ici on choisit <code>Resize</code> qui va récupérer un carré au centre de l'image.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bears</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span>
+    <span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">CategoryBlock</span><span class="p">),</span> 
+    <span class="n">get_items</span><span class="o">=</span><span class="n">get_image_files</span><span class="p">,</span> 
+    <span class="n">splitter</span><span class="o">=</span><span class="n">RandomSplitter</span><span class="p">(</span><span class="n">valid_pct</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="n">get_y</span><span class="o">=</span><span class="n">parent_label</span><span class="p">,</span>
+    <span class="n">item_tfms</span><span class="o">=</span><span class="n">Resize</span><span class="p">(</span><span class="mi">128</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La création d'un <code>DataBlock</code> permet de créer des <code>DataLoaders</code> quand on fournit le dossier cible.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dls</span> <span class="o">=</span> <span class="n">bears</span><span class="o">.</span><span class="n">dataloaders</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Maintenant qu'on a chargé les images, il faut encore vérifier qu'elles sont toujours pertinentes et qu'elles n'ont pas été rogné trop fort.</p>
+<p>On peut faire cela avec la méthode <code>valid.show_batch</code></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dls</span><span class="o">.</span><span class="n">valid</span><span class="o">.</span><span class="n">show_batch</span><span class="p">(</span><span class="n">max_n</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exporter-son-premier-mod&#232;le">Exporter son premier mod&#232;le<a class="anchor-link" href="#Exporter-son-premier-mod&#232;le"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gv</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&quot;Architecture et Methode d&#39;Apprentissage&quot;[shape=box3d width=1 height=0.7]</span>
+<span class="s1">Données-&gt;&quot;Architecture et Methode d&#39;Apprentissage&quot;-&gt; Capacité&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_svg output_subarea output_execute_result">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+&lt;!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"&gt;
+<!-- Generated by graphviz version 2.42.3 (20191010.1750)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="600pt" height="58pt" viewBox="0.00 0.00 600.38 58.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 54)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-54 596.38,-54 596.38,4 -4,4" />
+<!-- Architecture et Methode d&#39;Apprentissage -->
+<g id="node1" class="node">
+<title>Architecture et Methode d&#39;Apprentissage</title>
+<polygon fill="none" stroke="black" points="452.39,-50 141.39,-50 137.39,-46 137.39,0 448.39,0 452.39,-4 452.39,-50" />
+<polyline fill="none" stroke="black" points="448.39,-46 137.39,-46 " />
+<polyline fill="none" stroke="black" points="448.39,-46 448.39,0 " />
+<polyline fill="none" stroke="black" points="448.39,-46 452.39,-50 " />
+<text text-anchor="middle" x="294.89" y="-21.3" font-family="Times,serif" font-size="14.00">Architecture et Methode d&#39;Apprentissage</text>
+</g>
+<!-- Capacité -->
+<g id="node3" class="node">
+<title>Capacité</title>
+<ellipse fill="none" stroke="black" cx="540.39" cy="-25" rx="51.99" ry="18" />
+<text text-anchor="middle" x="540.39" y="-21.3" font-family="Times,serif" font-size="14.00">Capacité</text>
+</g>
+<!-- Architecture et Methode d&#39;Apprentissage&#45;&gt;Capacité -->
+<g id="edge2" class="edge">
+<title>Architecture et Methode d&#39;Apprentissage&#45;&gt;Capacité</title>
+<path fill="none" stroke="black" d="M452.51,-25C461.24,-25 469.71,-25 477.71,-25" />
+<polygon fill="black" stroke="black" points="477.96,-28.5 487.96,-25 477.96,-21.5 477.96,-28.5" />
+</g>
+<!-- Données -->
+<g id="node2" class="node">
+<title>Données</title>
+<ellipse fill="none" stroke="black" cx="50.7" cy="-25" rx="50.89" ry="18" />
+<text text-anchor="middle" x="50.7" y="-21.3" font-family="Times,serif" font-size="14.00">Données</text>
+</g>
+<!-- Données&#45;&gt;Architecture et Methode d&#39;Apprentissage -->
+<g id="edge1" class="edge">
+<title>Données&#45;&gt;Architecture et Methode d&#39;Apprentissage</title>
+<path fill="none" stroke="black" d="M101.58,-25C109.53,-25 118.12,-25 127.09,-25" />
+<polygon fill="black" stroke="black" points="127.38,-28.5 137.38,-25 127.38,-21.5 127.38,-28.5" />
+</g>
+</g>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/blogai/2021/06/24/FastAi.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blogai/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blogai/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blogai/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/blogai/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/blogai/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
